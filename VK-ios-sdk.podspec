@@ -12,6 +12,9 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'VKSdkResources' => ['library/Resources/SdkAssetCatalog.xcassets','library/Resources/*.lproj']
   }
+  s.pod_target_xcconfig = {
+    'CODE_SIGNING_ALLOWED' => 'NO'
+  }
   s.frameworks    = 'Foundation','UIKit','SafariServices','CoreGraphics','Security'
   s.requires_arc = true
 end
